@@ -32,7 +32,7 @@ below.
 Then copy it to your Zenoss server and run the following commands as the zenoss
 user.
 
-    zenpack --install _<package.egg>_
+    zenpack --install <package.egg>
     zenoss restart
 
 ### Developer Installation (link mode)
