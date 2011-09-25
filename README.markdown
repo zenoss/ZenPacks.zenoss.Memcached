@@ -22,12 +22,15 @@ versions are supported. You can download the free Core version of Zenoss from
 
 ### Normal Installation (packaged egg)
 Depending on what version of Zenoss you're running you will need a different
-package. Download the appropriate package for your Zenoss version, copy it to
-your Zenoss server, and running the following commands as the zenoss user.
+package. Download the appropriate package for your Zenoss version from the list
+below.
 
  * Zenoss 4.1 - ???: Not yet available.
  * Zenoss 3.0 - 4.0: [Latest Package for Python 2.6][]
  * Zenoss 2.4 - 2.5: [Latest Package for Python 2.4][]
+
+Then copy it to your Zenoss server and run the following commands as the zenoss
+user.
 
     zenpack --install _<package.egg>_
     zenoss restart
