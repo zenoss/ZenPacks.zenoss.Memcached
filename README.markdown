@@ -1,6 +1,6 @@
 # ZenPacks.zenoss.Memcached
 This project is a [Zenoss][] extension (ZenPack) that allows for monitoring of
-Memcached. See the Usage section for details on what is monitoring. This
+Memcached. See the Usage section for details on what is monitored. This
 ZenPack previously existed as a commercial-only extension to Zenoss called
 ZenPacks.zenoss.MemcachedMonitor. Upon being released as open source its
 name was changed to better match today's standards, and the version was reset
@@ -36,7 +36,7 @@ user.
     zenoss restart
 
 ### Developer Installation (link mode)
-If you wish to further develop and possibly contribute back to the PostgreSQL
+If you wish to further develop and possibly contribute back to the Memcached
 ZenPack you should clone the [git repository][], then install the ZenPack in
 developer mode using the following commands.
 
