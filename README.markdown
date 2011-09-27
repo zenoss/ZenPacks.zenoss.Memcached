@@ -37,7 +37,7 @@ user.
 
 ### Developer Installation (link mode)
 If you wish to further develop and possibly contribute back to the Memcached
-ZenPack you should clone the [git repository][], then install the ZenPack in
+ZenPack you should clone the git repository, then install the ZenPack in
 developer mode using the following commands.
 
     git clone git://github.com/zenoss/ZenPacks.zenoss.Memcached.git
