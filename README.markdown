@@ -25,7 +25,7 @@ Depending on what version of Zenoss you're running you will need a different
 package. Download the appropriate package for your Zenoss version from the list
 below.
 
- * Zenoss 4.1 - ???: Not yet available.
+ * Zenoss 4.1: [Latest Package for Python 2.7][]
  * Zenoss 3.0 - 4.0: [Latest Package for Python 2.6][]
  * Zenoss 2.4 - 2.5: [Latest Package for Python 2.4][]
 
@@ -77,5 +77,6 @@ device the template is bound to.
 [Zenoss]: <http://www.zenoss.com/>
 [very good community ZenPack]: <http://community.zenoss.org/docs/DOC-5887>
 [braudel]: <http://community.zenoss.org/people/braudel>
+[Latest Package for Python 2.6]: <https://github.com/downloads/zenoss/ZenPacks.zenoss.Memcached/ZenPacks.zenoss.Memcached-0.8.0-py2.7.egg>
 [Latest Package for Python 2.6]: <https://github.com/downloads/zenoss/ZenPacks.zenoss.Memcached/ZenPacks.zenoss.Memcached-0.8.0-py2.6.egg>
 [Latest Package for Python 2.4]: <https://github.com/downloads/zenoss/ZenPacks.zenoss.Memcached/ZenPacks.zenoss.Memcached-0.8.0-py2.4.egg>
