@@ -77,6 +77,6 @@ device the template is bound to.
 [Zenoss]: <http://www.zenoss.com/>
 [very good community ZenPack]: <http://community.zenoss.org/docs/DOC-5887>
 [braudel]: <http://community.zenoss.org/people/braudel>
-[Latest Package for Python 2.6]: <https://github.com/downloads/zenoss/ZenPacks.zenoss.Memcached/ZenPacks.zenoss.Memcached-0.8.0-py2.7.egg>
+[Latest Package for Python 2.7]: <https://github.com/downloads/zenoss/ZenPacks.zenoss.Memcached/ZenPacks.zenoss.Memcached-0.8.0-py2.7.egg>
 [Latest Package for Python 2.6]: <https://github.com/downloads/zenoss/ZenPacks.zenoss.Memcached/ZenPacks.zenoss.Memcached-0.8.0-py2.6.egg>
 [Latest Package for Python 2.4]: <https://github.com/downloads/zenoss/ZenPacks.zenoss.Memcached/ZenPacks.zenoss.Memcached-0.8.0-py2.4.egg>
