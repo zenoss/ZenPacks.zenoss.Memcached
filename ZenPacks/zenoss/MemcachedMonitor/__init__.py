@@ -21,8 +21,12 @@ log = logging.getLogger('zen.Memcached')
 
 import os
 
+import Globals
+
 from Products.ZenModel.ZenPack import ZenPackBase
-from Products.ZenUtils.Utils import zenPath
+from Products.ZenUtils.Utils import zenPath, unused
+
+unused(Globals)
 
 
 class ZenPack(ZenPackBase):
