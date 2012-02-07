@@ -3,8 +3,7 @@ This project is a [Zenoss][] extension (ZenPack) that allows for monitoring of
 Memcached. See the Usage section for details on what is monitored. This
 ZenPack previously existed as a commercial-only extension to Zenoss called
 ZenPacks.zenoss.MemcachedMonitor. Upon being released as open source its
-name was changed to better match today's standards, and the version was reset
-to 0.8.0 until it can be tested and verified by others.
+name was changed to better match today's standards.
 
 There already exists a [very good community ZenPack][] for memcached by
 [braudel][]. As far as I can see there is no compelling reason to use this
@@ -13,7 +12,7 @@ reduce confusion. At the time that this ZenPack was originally written, the
 community version didn't exist.
 
 ## Dependencies
-This ZenPack is known to be compatible with Zenoss versions 2.4 through 4.0.
+This ZenPack is known to be compatible with Zenoss versions 3 through 4.
 
 ## Installation
 You must first have, or install, Zenoss 2.4.0 or later. Core and Enterprise
@@ -27,7 +26,6 @@ below.
 
  * Zenoss 4.1: [Latest Package for Python 2.7][]
  * Zenoss 3.0 - 4.0: [Latest Package for Python 2.6][]
- * Zenoss 2.4 - 2.5: [Latest Package for Python 2.4][]
 
 Then copy it to your Zenoss server and run the following commands as the zenoss
 user.
@@ -77,6 +75,5 @@ device the template is bound to.
 [Zenoss]: <http://www.zenoss.com/>
 [very good community ZenPack]: <http://community.zenoss.org/docs/DOC-5887>
 [braudel]: <http://community.zenoss.org/people/braudel>
-[Latest Package for Python 2.7]: <https://github.com/downloads/zenoss/ZenPacks.zenoss.Memcached/ZenPacks.zenoss.Memcached-0.8.0-py2.7.egg>
-[Latest Package for Python 2.6]: <https://github.com/downloads/zenoss/ZenPacks.zenoss.Memcached/ZenPacks.zenoss.Memcached-0.8.0-py2.6.egg>
-[Latest Package for Python 2.4]: <https://github.com/downloads/zenoss/ZenPacks.zenoss.Memcached/ZenPacks.zenoss.Memcached-0.8.0-py2.4.egg>
+[Latest Package for Python 2.7]: <https://github.com/downloads/zenoss/ZenPacks.zenoss.Memcached/ZenPacks.zenoss.Memcached-1.0.0-py2.7.egg>
+[Latest Package for Python 2.6]: <https://github.com/downloads/zenoss/ZenPacks.zenoss.Memcached/ZenPacks.zenoss.Memcached-1.0.0-py2.6.egg>

@@ -3,13 +3,13 @@
 # or saved.  Do not modify them directly here.
 # NB: PACKAGES is deprecated
 NAME = 'ZenPacks.zenoss.Memcached'
-VERSION = '0.8.0'
-AUTHOR = 'Zenoss Labs'
+VERSION = '1.0.0'
+AUTHOR = 'Zenoss Labs <labs@zenoss.com>'
 LICENSE = ''
 NAMESPACE_PACKAGES = ['ZenPacks', 'ZenPacks.zenoss']
 PACKAGES = ['ZenPacks', 'ZenPacks.zenoss', 'ZenPacks.zenoss.Memcached']
 INSTALL_REQUIRES = []
-COMPAT_ZENOSS_VERS = ''
+COMPAT_ZENOSS_VERS = '>=2.4'
 PREV_ZENPACK_NAME = ''
 # STOP_REPLACEMENTS
 ################################
