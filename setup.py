@@ -5,7 +5,7 @@
 NAME = 'ZenPacks.zenoss.Memcached'
 VERSION = '1.0.0'
 AUTHOR = 'Zenoss Labs <labs@zenoss.com>'
-LICENSE = ''
+LICENSE = "GPLv2"
 NAMESPACE_PACKAGES = ['ZenPacks', 'ZenPacks.zenoss']
 PACKAGES = ['ZenPacks', 'ZenPacks.zenoss', 'ZenPacks.zenoss.Memcached']
 INSTALL_REQUIRES = []
