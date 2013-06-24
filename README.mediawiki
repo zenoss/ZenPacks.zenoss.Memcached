@@ -1,0 +1,26 @@
+This ZenPack allows for monitoring of memcached. See the Usage section for details on what is monitored. This ZenPack previously existed as a commercial-only extension to Zenoss called ZenPacks.zenoss.MemcachedMonitor. Upon being released as open source its name was changed to better match today's standards.
+
+There already exists a very good community ZenPack for memcached by braudel. As far as I can see there is no compelling reason to use this version over that. Ultimately I'd like to see the ZenPacks come together to reduce confusion. At the time that this ZenPack was originally written, the community version didn't exist.
+
+== Gallery ==
+<gallery widths=250px heights=127px>
+memcached - Graphs 1.png
+memcached - Graphs 2.png
+memcached - Graphs 3.png
+</gallery>
+
+== Usage ==
+Installing the ZenPack will add a sample monitoring template called "memcached" in the root of your device class tree. This makes it available to be bound to any device in the system.
+
+Assuming that you're running memcached on the standard port (11211/tcp), you only need to go to the device class containing your memcached servers, or to the individual device and bind the memcached template.
+
+If you run memcached on a different port, you will either want to edit the command template in the datasource within the memcached monitoring template to change the port number.
+
+; The following graphs and their included metrics will be monitored on each device the template is bound to.
+* memcached - CPU Utilization (rusage_system, rusage_user)
+* memcached - Memory Utilization (bytes, limit_maxbytes)
+* memcached - Cache Efficiency (get_hits, get_misses)
+* memcached - Requests (cmd_get, cmd_set, evictions)
+* memcached - Items Cached (curr_items, total_items)
+* memcached - Connections (curr_connections, total_connections, connection_structures)
+* memcached - Throughput (bytes_read, bytes_written)
