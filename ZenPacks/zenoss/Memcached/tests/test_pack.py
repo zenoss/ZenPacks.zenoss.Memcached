@@ -9,8 +9,8 @@
 
 from Products.ZenTestCase.BaseTestCase import BaseTestCase
 from ZenPacks.zenoss.Memcached.libexec.check_memcached import\
-    (ZenossMemcachedStatsPlugin,)
-from mock import Mock
+    ZenossMemcachedStatsPlugin as Plugin
+from mock import Mock, patch
 
 
 RESULT = 'STAT pid 1943\r\nSTAT uptime 28220\r\nSTAT time 1450719287\r\nSTAT \
@@ -38,16 +38,21 @@ class TestPack(BaseTestCase):
         super(TestPack, self).afterSetUp()
         self.socket = Mock()
         self.socket.recv.return_value = RESULT
+        self.plugin = Plugin('TEST')
 
-    def testRun(self):
-        self.assertIn('run', dir(ZenossMemcachedStatsPlugin))
-        self.assertTrue(callable(ZenossMemcachedStatsPlugin.run))
+    @patch('sys.exit', return_value='')
+    @patch('sys.stdout', return_value='')
+    @patch('socket.socket', return_value=Mock())
+    @patch.object(Plugin, 'readline', return_value='')
+    def testRun(self, readline, socket_func, sys_stdout_func, sys_exit_func):
+        self.assertIn('run', dir(self.plugin))
+        self.assertEqual(self.plugin.run(), None)
+        self.assertTrue(sys_exit_func.called)
 
     def testReadLine(self):
-        plugin = ZenossMemcachedStatsPlugin('0.0.0.0')
-        res = plugin.readline(self.socket)
+        res = self.plugin.readline(self.socket)
         self.assertEqual(res, 'STAT pid 1943')
-        self.assertTrue(len(plugin.buffer) > 0)
+        self.assertTrue(len(self.plugin.buffer) > 0)
 
 
 def test_suite():
